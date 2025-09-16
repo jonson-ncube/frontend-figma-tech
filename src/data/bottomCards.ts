@@ -3,7 +3,7 @@ import efunds from "../assets/em-fund.svg";
 import debt from "../assets/debt.svg";
 import community from "../assets/family.svg";
 
-export const bottomCarts = [
+export const bottomCards = [
     {
     image: home,
     alt: "Home",
@@ -26,6 +26,6 @@ export const bottomCarts = [
       image: community,
       alt: "community",
       position: "up",
-      title: "make a contribution to my community through philanthropy",
+      title: "Make a contribution to my community through philanthropy",
     },
 ];
