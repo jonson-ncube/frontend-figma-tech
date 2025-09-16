@@ -18,7 +18,13 @@ export default function ProgressSteps({
     const isActive = i <= current;
     const isFirst = i === 0;
 
-    // Use a loop to generate the correct number of steps and connectors
+    // This is the fifth column (index 4) that should have a border but no circle
+    if (i === 4) {
+      stepItems.push(<div key={i} className="h-0 w-full border" />);
+      continue;
+    }
+    
+    // Renders the main step circles
     stepItems.push(
       <div key={i} className={`h-0 ${isFirst ? 'w-[50%]' : 'w-full'} ${!isFirst && 'border'}`}>
         <div className={`flex relative justify-center items-center ${isFirst ? 'justify-self-end' : ''}`}>
@@ -42,8 +48,8 @@ export default function ProgressSteps({
       <img className="h-[3px] w-full" src={dottedLine} alt="dotted-line" />
 
       <div className="flex items-center justify-end w-full">
-      <img className="h-[3.5px] w-full" src={dottedLine} alt="dotted-line" />
-      {/* <div className="h-0 border border-dashed w-full"/> */}
+        <img className="h-[3.5px] w-full" src={dottedLine} alt="dotted-line" />
+        {/* <div className="h-0 border border-dashed w-full"/> */}
         <img className="h-[20px] w-[12px]" src={arrow} alt="arrow" />
       </div>
     </div>
