@@ -1,14 +1,14 @@
-import React from 'react';
-import family from './family.svg';
+import family from "./assets/family.svg";
+import CardComponentProps from "./components/CardComponent";
+import ProgressSteps from "./components/ProgressSteps";
 
 function App() {
   return (
-    <main>
-     <div 
-        style={{background: "#173F4B", width: "130px", height: "136px", boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.25)"}}>
-          <img src={family} alt="Family" />
-          <p style={{textAlign: "center"}}>Baby's birth</p>
-     </div>
+    <main className="flex justify-center items-center h-screen">
+      <div className="flex flex-col gap-10">
+      <CardComponentProps image={family} alt="Family" position="down" title="Baby's birth" />
+      <ProgressSteps/>
+      </div>
     </main>
   );
 }
