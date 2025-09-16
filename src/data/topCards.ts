@@ -1,7 +1,15 @@
 import family from "../assets/family.svg";
 import holiday from "../assets/going-holiday.svg";
 
-export const topCards = [
+
+type CardComponentProps = {
+    image: string;
+    alt: string;
+    title: string;
+    position: "up" | "down";
+}
+
+export const topCards:CardComponentProps[] = [
   {
     image: family,
     alt: "Family",

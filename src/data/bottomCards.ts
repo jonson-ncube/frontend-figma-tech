@@ -3,7 +3,14 @@ import efunds from "../assets/em-fund.svg";
 import debt from "../assets/debt.svg";
 import community from "../assets/family.svg";
 
-export const bottomCards = [
+type CardComponentProps = {
+    image: string;
+    alt: string;
+    title: string;
+    position: "up" | "down";
+}
+
+export const bottomCards:CardComponentProps[] = [
     {
     image: home,
     alt: "Home",
