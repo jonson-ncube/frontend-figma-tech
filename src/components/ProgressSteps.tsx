@@ -1,57 +1,6 @@
-// import StepCircle from "./StepCirle";
-// import dottedLine from "../assets/dottedLine.svg";
-// import arrow from "../assets/arrow.svg";
-
-// type ProgressStepsProps = {
-//   steps?: number;
-//   current?: number;
-// };
-
-// export default function ProgressSteps({
-//   steps = 5,
-//   current = 0,
-// }: ProgressStepsProps) {
-//   return (
-//     <div className="grid grid-cols-8 items-center">
-//       <div className="border h-0 flex justify-self-end w-[50%]">
-//         <div className="flex relative justify-center items-center">
-//           <StepCircle active={true} />
-//         </div>
-//       </div>
-//       <div className="border h-0 w-full">
-//         <div className="flex relative justify-center items-center">
-//           <StepCircle active={false} />
-//         </div>
-//       </div>
-//       <div className="border h-0 w-full">
-//         <div className="flex relative justify-center items-center">
-//           <StepCircle active={false} />
-//         </div>
-//       </div>
-//       <div className="border h-0 w-full">
-//         <div className="flex relative justify-center items-center">
-//           <StepCircle active={false} />
-//         </div>
-//       </div>
-//       <div className="border h-0 w-full" />
-//       <div className="border h-0 w-[50%]">
-//         <div className="flex relative justify-end items-center">
-//           <StepCircle active={false} />
-//         </div>
-//       </div>
-//       <img className="h-[3px] w-full" src={dottedLine} alt="dotted-line" />
-//       <div className="flex items-center justify-end w-full pr-5">
-//         <img className="h-[20px] w-[12px]" src={arrow} alt="arrow" />
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
 import dottedLine from "../assets/dottedLine.svg";
 import arrow from "../assets/arrow.svg";
-import StepCircle from "./StepCirle";
+import StepCircle from "./StepCircle";
 
 type ProgressStepsProps = {
   steps?: number;
