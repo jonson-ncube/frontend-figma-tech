@@ -7,7 +7,7 @@ type CardComponentProps = {
     image: string;
     alt: string;
     title: string;
-    position: "up" | "down";
+    position: "up" | "down" | "right";
 }
 
 export const bottomCards:CardComponentProps[] = [
@@ -32,7 +32,7 @@ export const bottomCards:CardComponentProps[] = [
   {
       image: community,
       alt: "community",
-      position: "up",
+      position: "right",
       title: "Make a contribution to my community through philanthropy",
     },
 ];
