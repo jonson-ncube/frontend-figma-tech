@@ -34,7 +34,7 @@ function App() {
 
   return (
     <main className="flex justify-center items-center h-screen">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-[32px]">
         <div className="grid gap-2 grid-cols-8">
           <div></div>
           <div>{topCardsRender[0]}</div>
@@ -46,7 +46,7 @@ function App() {
           <div></div>
           <div></div>
         </div>
-        {/* <ProgressSteps /> */}
+        <ProgressSteps />
 
         <div className="grid gap-2 grid-cols-8">
           {goals.map(({ label }, index) => (
