@@ -1,5 +1,6 @@
 import family from "../assets/family.svg";
 import holiday from "../assets/going-holiday.svg";
+import retire from "../assets/retire.svg";
 
 
 type CardComponentProps = {
@@ -23,7 +24,7 @@ export const topCards:CardComponentProps[] = [
     title: "Holiday",
   },
   {
-    image: family,
+    image: retire,
     alt: "retirement",
     position: "down",
     title: "Retire",

@@ -1,7 +1,7 @@
 import home from "../assets/home.svg";
 import efunds from "../assets/em-fund.svg";
 import debt from "../assets/debt.svg";
-import community from "../assets/family.svg";
+import community from "../assets/community.svg";
 
 type CardComponentProps = {
     image: string;
@@ -15,7 +15,7 @@ export const bottomCards:CardComponentProps[] = [
     image: home,
     alt: "Home",
     position: "up",
-    title: "Buy a home",
+    title: "New home",
   },
   {
     image: efunds,
