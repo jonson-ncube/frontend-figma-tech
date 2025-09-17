@@ -1,12 +1,5 @@
 import TrianglePointer from "./TrianglePointer";
 
-type CardComponentProps = {
-    image: string;
-    alt: string;
-    title: string;
-    position: "up" | "down" | "right";
-}
-
 export default function CardComponent({image, alt, title, position = "down"} : CardComponentProps) {
   return (
     <div className={`flex flex-col relative ${position === "right" ? "bg-[#3C7F90] items-end":"bg-[#173F4B] items-center"} w-[130px] min-h-[136px] rounded-[5px] p-2 shadow-[0px_4px_12px_rgba(0,0,0,0.25)]`}>

@@ -2,10 +2,6 @@ import dottedLine from "../assets/dottedLine.svg";
 import arrow from "../assets/arrow.svg";
 import StepCircle from "./StepCircle";
 
-type ProgressStepsProps = {
-  steps?: number;
-  current?: number;
-};
 
 export default function ProgressSteps({
   steps = 6,
