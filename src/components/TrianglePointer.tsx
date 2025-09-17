@@ -1,6 +1,3 @@
-type TrianglePointerProps = {
-    position: "up" | "down" | "right";
-}
 
 export default function TrianglePointer({ position }: TrianglePointerProps) {
   return (

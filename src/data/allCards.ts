@@ -6,13 +6,6 @@ import family from "../assets/family.svg";
 import holiday from "../assets/going-holiday.svg";
 import retire from "../assets/retire.svg";
 
-export type CardComponentProps = {
-  image: string;
-  alt: string;
-  title: string;
-  position: "up" | "down" | "right";
-};
-
 export const allCards = {
   top: [
     {
